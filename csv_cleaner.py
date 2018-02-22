@@ -2,11 +2,17 @@ import re
 import pandas as pd
 
 """
-Find First Occurence of a Digit in String:
-https://stackoverflow.com/questions/4510709/python-find-index-of-first-digit-in-string
+The 'national_forests.csv' file is a bit messy. This file cleans the
+CSV file so that it may be inserted into the SQL database.
 
-Add New Column to DataFrame:
-https://stackoverflow.com/questions/41274332/pandas-creating-a-new-column
+In particular, the 'Location' column contains the state name and two
+types of GPS coordinates. This script finds the state name(s) and puts 
+that in a new column 'State'. It also deletes the first set of GPS
+coordinates and keeps the second set (of form a.b°N c.d°W) in the 
+'Location' column.
+
+The results can be seen by comparing the original file with:
+'national_forests_cleaned.csv'.
 """
 
 def find_nth(haystack, needle, n):
@@ -38,7 +44,7 @@ def format():
 
 if __name__ == '__main__':
 
-    ## format()
+    format()
 
     cd = '/users/ericyates/Desktop/GIS_data/sql_data/'
     file_name = 'national_forests.csv'

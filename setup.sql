@@ -1,3 +1,16 @@
+-- Database: parks_db
+
+-- DROP DATABASE parks_db;
+
+CREATE DATABASE parks_db
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'C'
+    LC_CTYPE = 'C'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1;
+
 CREATE TABLE parks(
 park_id serial PRIMARY KEY,
 y VARCHAR(50) NOT NULL,

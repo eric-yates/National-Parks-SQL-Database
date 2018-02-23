@@ -2,8 +2,11 @@ import re
 import pandas as pd
 
 """
-The 'national_forests.csv' file is a bit messy. This file cleans the
-CSV file so that it may be inserted into the SQL database.
+To use this file, first set 'cd' on line 20 to the path to the 
+'/sql-national-parks/data' directory. Then, run the script.
+
+The 'national_forests.csv' file is a bit messy. This script cleans 
+the CSV file so that it may be inserted into the SQL database.
 
 In particular, the 'Location' column contains the state name and two
 types of GPS coordinates. This script finds the state name(s) and puts 
@@ -15,15 +18,9 @@ The results can be seen by comparing the original file with:
 'national_forests_cleaned.csv'.
 """
 
-def find_nth(haystack, needle, n):
-    start = haystack.find(needle)
-    while start >= 0 and n > 1:
-        start = haystack.find(needle, start+len(needle))
-        n -= 1
-    return start
+cd = #path_to_data_directory
 
 def format():
-    n = open(cd + 'new_nat_mons.csv', 'a')
 
     with open(cd + 'national_monuments.csv') as f:
         first = True
@@ -45,8 +42,7 @@ def format():
 if __name__ == '__main__':
 
     format()
-
-    cd = #path_to_data_folder
+    
     file_name = 'national_forests.csv'
 
     df = pd.read_csv(cd + file_name)
@@ -64,7 +60,7 @@ if __name__ == '__main__':
 
         df.at[i, 'Location'] = line[slash_marker+1:]
 
-    save_file = 'new_monuments.csv'
+    save_file = 'national_forests_cleaned.csv'
 
     df.to_csv(cd + save_file, sep=',')
 

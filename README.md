@@ -13,12 +13,14 @@ Files:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;csv_cleaner.py: Cleans 'national_forests.csv' into a workable format. Use before setting up the SQL database  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setup.sql: Creates the database and imports data from the /tmp folder  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;insert_data.sql: Contains examples for how to insert new data into the database  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;example_queries.sql: Contains examples for how to query the data  
 
 Schema - Table: Fields
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parks: park_id (primary key), x-cooordinate, y-coordinate, park_name, state_abbr, park_type, visited  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;States: state_id (primary key), name, abbreviation  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trails: trail_id (primary key), park_id, trail_name, distance, elevation, duration, rating, visited, date  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trails: trail_id (primary key), park_id, trail_name, distance, elevation, duration, rating, visited, visit_date  
 
 Data:
 

@@ -1,6 +1,6 @@
 # sql-national-parks
 
-This repository contains the layout of a SQL database to manage which national parks, national forests, etc. have been visited. It may be integrated with a GIS system to create a map of parks. Use the x/y coordinate columns to set the location, and use the the vistited column to set the color of the pin (ie. red if visited=1 - have visited, blue if visited=0 - have not visited).
+This repository contains the layout of a SQL database to manage which national parks, national forests, etc. have been visited. It may be integrated with a GIS system to create a map of parks. Use the x/y coordinate columns to set the location, and use the the visited column to set the color of the pin (ie. red if visited=1 - have visited, blue if visited=0 - have not visited).
 
 Files:
 

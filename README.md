@@ -4,11 +4,18 @@ This repository contains the layout of a SQL database to manage which national p
 
 Files:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;csv_cleaner.py: Cleans the 'national_forests.csv' file into a workable format. Use before setting up the SQL database.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setup.sql: Creates the database and imports data from the /tmp folder.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;csv_cleaner.py: Cleans 'national_forests.csv' into a workable format. Use before setting up the SQL database  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setup.sql: Creates the database and imports data from the /tmp folder  
 
 Schema - Table: Fields
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parks: park_id (primary key), x-cooordinate, y-coordinate, park_name, state_abbr, park_type, visited  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;States: state_id (primary key), name, abbreviation  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trails: trail_id (primary key), park_id, trail_name, distance, elevation, duration, rating, visited  
+
+Data:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;national_forests.csv: Uncleaned data related to national forests only  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;national_forests_cleaned.csv: Cleaned data obtained from passing it to the csv_cleaner.py file  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;national_parks.csv: Data related to national parks, national historic parks,...  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;states.csv: Contains a table of state-abbreviation pairs  

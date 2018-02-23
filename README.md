@@ -9,7 +9,6 @@ Files:
 
 Schema - Table: Fields
 
-  Parks: park_id (primary key), x-cooordinate, y-coordinate, park_name, state_abbr, park_type, visited \n
-  States: state_id (primary key), name, abbreviation \n
-  Trails: trail_id (primary key), park_id, trail_name, distance, elevation, duration, rating, visited \n
-  
+  Parks: park_id (primary key), x-cooordinate, y-coordinate, park_name, state_abbr, park_type, visited  
+  States: state_id (primary key), name, abbreviation  
+  Trails: trail_id (primary key), park_id, trail_name, distance, elevation, duration, rating, visited  

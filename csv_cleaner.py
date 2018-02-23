@@ -2,54 +2,36 @@ import re
 import pandas as pd
 
 """
-To use this file, first set 'cd' on line 20 to the path to the 
+To use this file, first set 'cd' on line  to the path to the
 '/sql-national-parks/data' directory. Then, run the script.
 
-The 'national_forests.csv' file is a bit messy. This script cleans 
-the CSV file so that it may be inserted into the SQL database.
+The 'national_forests.csv' file is a bit messy. The 'Location' column
+contains the state name and two types of GPS coordinates. This script
+finds the state name(s) and puts that in a new column 'State'. It also
+deletes the first set of GPS coordinates and keeps the second set of
+form a.b degN c.d degW in the 'Location' column.
 
-In particular, the 'Location' column contains the state name and two
-types of GPS coordinates. This script finds the state name(s) and puts 
-that in a new column 'State'. It also deletes the first set of GPS
-coordinates and keeps the second set (of form a.b°N c.d°W) in the 
-'Location' column.
-
-The results can be seen by comparing the original file with:
-'national_forests_cleaned.csv'.
+The cleaned file 'national_forests_cleaned.csv' gets saved to the
+'/sql-national-parks/data' directory. After cleaning, it may be
+inserted correctly into the SQL database.
 """
 
-cd = #path_to_data_directory
+cd = #your_path_to_data_directory
 
-def format():
 
-    with open(cd + 'national_monuments.csv') as f:
-        first = True
-        for line in f:
+def load_file(cd):
 
-            if first:
-                first = False
-                n.write(line)
-                continue
-            
-            else:
-                marker = line.find('/')
-                digit = re.search('\d', line)
-
-                n.write(line[:comma+1] + line[marker+2:])
-
-    n.close()
-
-if __name__ == '__main__':
-
-    format()
-    
     file_name = 'national_forests.csv'
 
-    df = pd.read_csv(cd + file_name)
-
-    df.loc[:,'State'] = ''
+    return pd.read_csv(cd + file_name)
 
 
+def split(df):
+
+    # Create a blank column for state names to go into
+    df.loc[:, 'State'] = ''
+
+    # Split the 'Location' column into states and GPS coordinates
     for i, line in enumerate(df['Location'].values):
         digit_marker = re.search('\d', line)
         m = digit_marker.start()
@@ -60,10 +42,20 @@ if __name__ == '__main__':
 
         df.at[i, 'Location'] = line[slash_marker+1:]
 
+    return df
+
+
+def save_file(cd, df):
+
     save_file = 'national_forests_cleaned.csv'
 
     df.to_csv(cd + save_file, sep=',')
 
-    
 
+if __name__ == '__main__':
 
+    df = load_file(cd)
+
+    df = split(df)
+
+    save_file(cd, df)

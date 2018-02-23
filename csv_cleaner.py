@@ -46,7 +46,7 @@ if __name__ == '__main__':
 
     format()
 
-    cd = '/users/ericyates/Desktop/GIS_data/sql_data/'
+    cd = #path_to_data_folder
     file_name = 'national_forests.csv'
 
     df = pd.read_csv(cd + file_name)

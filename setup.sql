@@ -1,16 +1,3 @@
--- Database: parks_db
-
--- DROP DATABASE parks_db;
-
-CREATE DATABASE parks_db
-    WITH 
-    OWNER = postgres
-    ENCODING = 'UTF8'
-    LC_COLLATE = 'C'
-    LC_CTYPE = 'C'
-    TABLESPACE = pg_default
-    CONNECTION LIMIT = -1;
-
 CREATE TABLE parks(
 park_id serial PRIMARY KEY,
 y VARCHAR(50) NOT NULL,
@@ -31,9 +18,10 @@ park_id SMALLINT REFERENCES parks(park_id),
 trail_name VARCHAR(100) NOT NULL,
 distance FLOAT8,
 elevation FLOAT8,
-duration TIMESTAMP,
+duration VARCHAR(20),
 rating SMALLINT,
-visited SMALLINT);
+visited SMALLINT,
+date TIMESTAMP);
 
 CREATE TABLE forests(
 forest_id serial PRIMARY KEY,
@@ -46,11 +34,10 @@ description VARCHAR(1000),
 visited SMALLINT);
 
 COPY parks(x, y, park_name, state_abbr, park_type)
-FROM '/tmp/national_parks.csv'
+FROM '/tmp/data/national_parks.csv'
 WITH CSV HEADER DELIMITER AS ',';
 
-COPY states(state_name, state_abbr) 
-FROM '/tmp/states.csv'
+COPY states(state_name, state_abbr) FROM '/tmp/data/states.csv'
 WITH CSV HEADER DELIMITER AS ',';
 
 INSERT INTO states(state_name, state_abbr)
@@ -62,7 +49,7 @@ VALUES
 ('American Samoa', 'AS');
 
 COPY forests(forest_id, forest_name, state_name, location, formation, area, description)
-FROM '/tmp/national_forests_cleaned.csv'
+FROM '/tmp/data/national_forests_cleaned.csv'
 WITH CSV HEADER DELIMITER AS ',';
 
 INSERT INTO parks

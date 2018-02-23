@@ -49,7 +49,8 @@ COPY parks(x, y, park_name, state_abbr, park_type)
 FROM '/tmp/national_parks.csv'
 WITH CSV HEADER DELIMITER AS ',';
 
-COPY states(state_name, state_abbr) FROM '/tmp/states.csv'
+COPY states(state_name, state_abbr) 
+FROM '/tmp/states.csv'
 WITH CSV HEADER DELIMITER AS ',';
 
 INSERT INTO states(state_name, state_abbr)

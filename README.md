@@ -17,7 +17,7 @@ Schema - Table: Fields
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parks: park_id (primary key), x-cooordinate, y-coordinate, park_name, state_abbr, park_type, visited  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;States: state_id (primary key), name, abbreviation  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trails: trail_id (primary key), park_id, trail_name, distance, elevation, duration, rating, visited  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trails: trail_id (primary key), park_id, trail_name, distance, elevation, duration, rating, visited, date  
 
 Data:
 

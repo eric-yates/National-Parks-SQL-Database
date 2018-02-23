@@ -21,7 +21,7 @@ elevation FLOAT8,
 duration VARCHAR(20),
 rating SMALLINT,
 visited SMALLINT,
-date TIMESTAMP);
+visit_date TIMESTAMP);
 
 CREATE TABLE forests(
 forest_id serial PRIMARY KEY,

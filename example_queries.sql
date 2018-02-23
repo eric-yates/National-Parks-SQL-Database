@@ -6,7 +6,7 @@ INNER JOIN trails B ON A.park_id = B.park_id;
 # Question: How many national parks are in Washington?
 # Answer: 3
 
-SELECT count(*)
+SELECT COUNT(*)
 FROM parks A
 INNER JOIN states B ON A.state_abbr = B.state_abbr
 WHERE state_name='Washington' AND park_type='National Park';

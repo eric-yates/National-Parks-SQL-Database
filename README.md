@@ -2,6 +2,12 @@
 
 This repository contains the layout of a SQL database to manage which national parks, national forests, etc. have been visited. It may be integrated with a GIS system to create a map of parks. Use the x/y coordinate columns to set the location, and use the the visited column to set the color of the pin (ie. red if visited=1 - have visited, blue if visited=null - have not visited).
 
+Setup Instructions:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Clone/fork the repository  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) Copy the 'data' folder to /tmp  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) Run 'setup.sql' in your SQL environment  
+
 Files:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;csv_cleaner.py: Cleans 'national_forests.csv' into a workable format. Use before setting up the SQL database  

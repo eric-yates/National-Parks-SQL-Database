@@ -6,7 +6,8 @@ Setup Instructions:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Clone/fork the repository  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) Copy the 'data' folder to /tmp  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) Run 'setup.sql' in your SQL environment  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3) Create a database in your SQL environment of choice  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4) Run 'setup.sql' in your database  
 
 Files:
 

@@ -4,11 +4,11 @@ This repository contains the layout of a SQL database to manage which national p
 
 Files:
 
-  csv_cleaner.py: Cleans the 'national_forests.csv' file into a workable format. Use before setting up the SQL database.
-  setup.sql: Creates the database and imports data from the /tmp folder.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;csv_cleaner.py: Cleans the 'national_forests.csv' file into a workable format. Use before setting up the SQL database.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setup.sql: Creates the database and imports data from the /tmp folder.
 
 Schema - Table: Fields
 
-  Parks: park_id (primary key), x-cooordinate, y-coordinate, park_name, state_abbr, park_type, visited  
-  States: state_id (primary key), name, abbreviation  
-  Trails: trail_id (primary key), park_id, trail_name, distance, elevation, duration, rating, visited  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parks: park_id (primary key), x-cooordinate, y-coordinate, park_name, state_abbr, park_type, visited  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;States: state_id (primary key), name, abbreviation  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trails: trail_id (primary key), park_id, trail_name, distance, elevation, duration, rating, visited  

@@ -26,5 +26,5 @@ Data:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;national_forests.csv: Uncleaned data related to national forests only  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;national_forests_cleaned.csv: Cleaned data obtained from passing it to the csv_cleaner.py file  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;national_parks.csv: Data related to national parks, national historic parks,...  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;national_parks.csv: Data related to national parks, national monuments,...  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;states.csv: Contains a table of state-abbreviation pairs  

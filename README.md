@@ -11,7 +11,7 @@ Setup Instructions:
 
 Files:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;csv_cleaner.py: Cleans 'national_forests.csv' into a workable format. Cleaned file already in data directory, so not necessary to run
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;csv_cleaner.py: Cleans 'national_forests.csv' to a workable format. Cleaned file already in /data, so unnecessary to run  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;setup.sql: Creates the database and imports data from the /tmp folder  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;insert_data.sql: Contains examples for how to insert new data into the database  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;example_queries.sql: Contains examples for how to query the data  

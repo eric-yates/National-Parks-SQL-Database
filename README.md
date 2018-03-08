@@ -11,7 +11,6 @@ These instructions will get a copy of the project up and running on your local m
 What things you need to install the software and how to install them:
 
 ```
-Python 2.7
 PostgreSQL (or any other SQL database)
 ```
 
@@ -19,6 +18,9 @@ The following may be helpful:
 
 ```
 PgAdmin4
+
+Python 2.7 (if using 'csv_cleaner.py')
+Pandas (if using 'csv_cleaner.py')
 ```
 
 ### Installing

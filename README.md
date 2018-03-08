@@ -17,7 +17,7 @@ PostgreSQL (or any other SQL database)
 The following may be helpful:
 
 ```
-PgAdmin4
+PgAdmin4 (for easier management of the database)
 
 Python 2.7 (if using 'csv_cleaner.py')
 Pandas (if using 'csv_cleaner.py')

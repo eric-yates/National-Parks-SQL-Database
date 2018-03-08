@@ -90,4 +90,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 ## Acknowledgments
 
-* To the friends and the travels we've enjoyed, thank you for the inspiration for this project
+* To my friends and the travels we've enjoyed, thank you for the inspiration for this project

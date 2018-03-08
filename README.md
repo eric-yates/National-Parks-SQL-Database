@@ -25,6 +25,8 @@ PgAdmin4
 
 Download PostgreSQL [here](https://www.postgresql.org/download/). Or use any other SQL database of your choice.
 
+While not technically necessary, PgAdmin4 is very useful for setting up and interacting with PostgreSQL databases. Download [here](https://www.pgadmin.org/download/).
+
 If you want to play around with the 'csv_cleaner.py' file, you'll need to download Python 2.7 [here](https://www.python.org/downloads/). This script creates cleaned data from a CSV file of national forest data. The cleaned data is already in the /data directory, so there's really no need to run this file if you only want to setup the database.
 
 If you choose to play around with the cleaning file, you'll need pandas. By default, Python should come with pip (a package manager). Use it to install the pandas by opening the Terminal and entering the command:

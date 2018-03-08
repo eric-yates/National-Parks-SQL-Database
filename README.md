@@ -54,9 +54,9 @@ pip install pandas
 
 ### Schema - Table: Fields
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Parks: park_id (primary key), x-cooordinate, y-coordinate, park_name, state_abbr, park_type, visited  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;States: state_id (primary key), name, abbreviation  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trails: trail_id (primary key), park_id, trail_name, distance, elevation, duration, rating, visited, visit_date  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;parks: park_id (primary key), x-cooordinate, y-coordinate, park_name, state_abbr, park_type, visited  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;states: state_id (primary key), name, abbreviation  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;trails: trail_id (primary key), park_id, trail_name, distance, elevation, duration, rating, visited, visit_date  
 
 ### Data Sources
 

@@ -65,13 +65,16 @@ pip install pandas
 
 ### GIS Integration
 
-Use the x/y coordinate columns to set the location, and use the the visited column to set the color of the pin (ie. red if visited=1 - have visited, blue if visited=null - have not visited).
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1) Use the x/y coordinate columns to set the location
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2) Use the the visited column to set the color of the pin 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) ie. Red if visited = 1 - have visited
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) ie. Blue if visited=null - have not visited).
 
 
 ## Built With
 
-* [PostgreSQL]() - 
-* [PgAdmin4]() - 
+* [PostgreSQL](https://www.postgresql.org/about/) - Open-source, object-relational database
+* [PgAdmin4](https://www.pgadmin.org/) - Administration and development platform for PostgreSQL
 * [Pandas](https://pandas.pydata.org/pandas-docs/stable/) - Data manipulation
 
 

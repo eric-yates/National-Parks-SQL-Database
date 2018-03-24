@@ -20,7 +20,7 @@ The following may be helpful:
 
 ### Installing
 
-Download PostgreSQL [here](https://www.postgresql.org/download/). Or use any other SQL database of your choice.
+Download PostgreSQL [here](https://www.postgresql.org/download/). Or these scripts should work with any other SQL database of your choice.
 
 While not technically necessary, PgAdmin4 is very useful for setting up and interacting with PostgreSQL databases. Download [here](https://www.pgadmin.org/download/).
 

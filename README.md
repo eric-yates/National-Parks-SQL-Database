@@ -1,6 +1,6 @@
 # sql-national-parks
 
-Creates a SQL database to track which national parks, national monuments, national forests,...have been visited. Also tracks which trails have been hiked and their stats. It may be integrated with GIS to create a map of parks.
+Creates a SQL database to track which national parks, national monuments, national forests, etc. have been visited. Also tracks which trails have been hiked and their stats. It may be integrated with a GIS to create a map of parks.
 
 ## Getting Started
 

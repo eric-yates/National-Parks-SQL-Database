@@ -8,7 +8,7 @@ These instructions will get a copy of the project up and running on your local m
 
 ### Prerequisites
 
-What things you need to install the software and how to install them:
+Instructions for installing these software are listed in the next section: Installing. The only required software is:
 
 * PostgreSQL (or any other SQL database)
 
